@@ -1,0 +1,15 @@
+// import Header from "./Header/Header.jsx";
+// import Main from "./Main/Main.jsx";
+// import Footer from "./Footer/Footer.jsx";
+import Authorization from "./pages/Authorization";
+import { BrowserRouter } from "react-router-dom";
+
+export default function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <Authorization/>
+      </BrowserRouter>
+    </>
+  );
+}

@@ -1,8 +1,11 @@
+:root {
+  --vh: 100vh; /* Изначально устанавливаем переменную --vh */
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   width: 100vw;
-  height: 100vh;
+  height: calc(var(--vh));
   overflow: hidden;
 }
 #root {

@@ -11,9 +11,10 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #1A1A1D;
-  color: #FFF;
+  background-color: #FFF;
+  color: #1A1A1D;
 }
 a {
   text-decoration: none;
 }
+

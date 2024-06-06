@@ -1,0 +1,39 @@
+@import "../components/Colors.scss";
+
+.--dart-mode {
+  background-color: $color-black;
+  color: $color-white;
+
+  section {
+    input {
+      background-color: $color-white;
+      color: $color-black;
+    }
+
+    button {
+      background-color: $color-turquoise;
+      color: $color-white;
+    }
+
+    button:active {
+      background-color: $color-white;
+      color: $color-turquoise;
+    }
+  }
+
+  header {
+    button {
+      background-color: $color-black;
+
+      svg {
+        fill: $color-white;
+      }
+    }
+
+    button:hover {
+      svg {
+        fill: $color-turquoise;
+      }
+    }
+  }
+}

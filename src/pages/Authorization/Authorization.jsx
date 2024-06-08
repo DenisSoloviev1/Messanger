@@ -1,11 +1,10 @@
-import "./Authorization.scss";
-import Form from "../../components/Form.jsx";
-import Header from "../../components/Header/Header.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
-// import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import "./Authorization.scss";
+import Form from "../../widgets/Form/Form.jsx";
+import Header from "../../widgets/Header/Header.jsx";
+import Footer from "../../widgets/Footer/Footer.jsx";
 
-export default function Authorization({activeMode,setActiveMode}) {
+export default function Authorization() {
   return (
     <>
       <Header />
@@ -16,18 +15,8 @@ export default function Authorization({activeMode,setActiveMode}) {
             element={
               <Form
                 title={"Войти"}
-                text={"Нет аккаунта?"}
-                to={"/registration"}
-                linkText={"Регистрация"}
-              />
-            }
-          />
-          <Route
-            path="/authorization"
-            element={
-              <Form
-                title={"Войти"}
-                text={"Нет аккаунта?"}
+                passwordText={"password"}
+                question={"Нет аккаунта?"}
                 to={"/registration"}
                 linkText={"Регистрация"}
               />
@@ -38,15 +27,16 @@ export default function Authorization({activeMode,setActiveMode}) {
             element={
               <Form
                 title={"Регистрация"}
-                text={"Уже с нами?"}
-                to={"/authorization"}
+                passwordText={"create password"}
+                question={"Уже с нами?"}
+                to={"/"}
                 linkText={"Войти"}
               />
             }
           />
         </Routes>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

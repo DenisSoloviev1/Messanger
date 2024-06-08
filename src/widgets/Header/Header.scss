@@ -1,4 +1,4 @@
-@import "../../components/Colors.scss";
+@import "../../shared/Colors.scss";
 
 header {
   display: flex;
@@ -28,5 +28,9 @@ header {
     svg {
       fill: $color-turquoise;
     }
+  }
+
+  button:focus {
+    outline: none;
   }
 }

@@ -1,0 +1,12 @@
+@import "../../../shared/Colors.scss";
+
+#UserMain {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: $color-white;
+  border-radius: 1rem;
+}
